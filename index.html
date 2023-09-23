@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>Student Portal</h3>
+    <div class="fullcon">
+<div class="kk">
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button id="searchButton">Search</button>
+    </div>
+    <div class="buttons">
+        <button id="sortAZButton">Sort A->Z</button>
+        <button id="sortZAButton">Sort Z->A</button>
+        <button id="sortMarksButton">Sort by Marks</button>
+        <button id="sortPassingButton">Sort by Passing</button>
+        <button id="sortClassButton">Sort by Class</button>
+        <button id="sortGenderButton">Sort by Gender</button>
+    </div>
+</div>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Class</th>
+                <th>Marks</th>
+                <th>Passing</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <!-- Student data rows will be added here dynamically -->
+        </tbody>
+    </table>
+    <div id="genderTables" class="hidden">
+        <table id="femaleTable">
+            <caption>Female Students</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Passing</th>
+                    <th>Marks</th>
+                    <th>Class</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="femaleTableBody">
+                <!-- Female student data rows will be added here dynamically -->
+            </tbody>
+        </table>
+        <table id="maleTable">
+            <caption>Male Students</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Passing</th>
+                    <th>Marks</th>
+                    <th>Class</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="maleTableBody">
+                <!-- Male student data rows will be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
+</div>
+    <script src="script.js"></script> 
+</body>
+</html>
